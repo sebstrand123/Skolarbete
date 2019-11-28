@@ -162,12 +162,6 @@ html, body {
     #header .jumbotron h1 {
         font-size: 4em;
     }
-
-    #how-it-works .container h1 {
-        font-size: 4em;
-        margin-top: 2.5rem;
-        margin-bottom: 3rem;
-    }
     
     #header .jumbotron p {
         font-size: 1.3em;
@@ -198,12 +192,22 @@ html, body {
     }
 
     #how-it-works .container i {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-top: 1.2rem;
+    }
+
+    #how-it-works .container h1 {
+        font-size: 4em;
+        margin-top: 2.5rem;
+        margin-bottom: 3rem;
     }
 
     #how-it-works .container .step-picture {
         margin-top: 5rem;
+    }
+
+    #how-it-works .container .step-picture h5 {
+        font-size: 1em;
     }
     
     #how-it-works .container .step-picture p {

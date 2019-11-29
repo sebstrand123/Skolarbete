@@ -134,6 +134,31 @@ html, body {
     margin-bottom: 2rem;
 }
 
+#benefits {
+    border-bottom: 1px solid var(--mygrey);
+}
+
+#benefits .container h1 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 2.7rem;
+}
+
+#benefits .container h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+#benefits .container p {
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+#benefits .container img {
+    width: 20%;
+}
+
 @media(min-width: 576px) {
     #header {
         height: 480px;
@@ -151,6 +176,10 @@ html, body {
 
     #how-it-works .container i {
         font-size: 1rem;
+    }
+
+    #benefits .container img {
+        width: 13%;
     }
 }
 
@@ -212,6 +241,16 @@ html, body {
     
     #how-it-works .container .step-picture p {
         margin-bottom: 5rem;
+    }
+
+    #benefits .container h1 {
+        font-size: 4em;
+        margin-bottom: 7rem;
+        margin-top: 5rem;
+    }
+
+    #benefits .container img {
+        width: 15%;
     }
 }
 

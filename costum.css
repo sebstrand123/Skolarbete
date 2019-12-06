@@ -169,10 +169,84 @@ html, body {
     display: none;
 }
 
-#feaeture-h1 {
+#feature-h1 {
     font-size: 1.5rem;
     margin-top: 2rem;
     margin-bottom: 4rem;
+}
+
+#testimonials {
+    border-bottom: 1px solid var(--mygrey);
+}
+
+#testimonials h1 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+#testimonials .container #quote {
+    font-size: 3.5rem;
+    display: flex;
+    opacity: 0.2;
+    margin-left: 1.5rem;
+}
+
+#testimonials .container #testimonial-p1 {
+    text-align: left;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+#testimonials .container img {
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+    width: 85%;
+}
+
+#testimonials .container .icon-border {
+    border: 1px solid;
+    font-size: 2.5rem;
+    width: 2.5rem;
+}
+
+#testimonials .container h5 {
+    padding: 0;
+    margin-left: 1.5rem;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+#testimonials .container #testimonial-p2 {
+    text-align: left;
+    margin-left: 1.5rem;
+    margin-top: -1.3rem;
+    opacity: 0.5;
+}
+
+#testimonials .container .test-user-info {
+    display: grid;
+    grid-template-columns: 228px 50px 50px;
+}
+
+#news {
+    border-bottom: 1px solid var(--mygrey);
+}
+
+#news h1 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#news .container p {
+    margin-top: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+#news .container img {
+    width: 40%;
 }
 
 @media(min-width: 576px) {
@@ -213,7 +287,11 @@ html, body {
     
     #features .container {
         display: grid;
-        grid-template-columns: 220px 220px;
+        grid-template-columns: 250px 250px;
+    }
+
+    #features .container:last-child {
+        margin-bottom: 10rem;
     }
 
     #features .container .feature-list {
@@ -225,7 +303,7 @@ html, body {
 
     #features .container .feature-image {
         height: 50%;
-        margin-left: 1rem;
+        margin-left: 2rem;
         margin-top: 1.5rem;
     }
 
@@ -248,8 +326,35 @@ html, body {
         display: flex;
         margin-left: 27rem;
         padding-bottom: 2rem;
-        height: 820px;
+        height: 900px;
         position: absolute;
+    }
+
+    #testimonials .container img {
+        width: 70%;
+        margin-left: 1.5rem;
+    }
+
+    #testimonials .container .test-user-info {
+        grid-template-columns: 503px 55px 55px;
+    }
+
+    #testimonials .container h5 {
+        margin-left: 7.3rem;
+    }
+    
+    #testimonials .container #testimonial-p2 {
+        margin-left: 7.3rem;
+    }
+
+    #news .container p {
+        margin-bottom: 3rem;
+        margin-right: 7rem;
+        margin-left: 7rem;
+    }
+
+    #news .container img {
+        width: 30%;
     }
 }
 
@@ -347,14 +452,9 @@ html, body {
         width: 1024px;
     }
 
-    #features .container {
-        grid-template-columns: 200px 200px;
-    }
-
     #laptop-pic {
         margin-left: 30rem;
         padding-bottom: 2rem;
-        height: 900px;
     }
 
     #features h1 {
@@ -363,12 +463,74 @@ html, body {
         margin-top: 5rem;
     }
 
-     #features .container p {
-
+    #testimonials h1 {
+        font-size: 4em;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
     }
 
-    #features .container h5 {
+    #testimonials .container img {
+        width: 85%;
+        height: 370px;
+        margin-left: -6rem;
+        padding-top: 3.2rem;
+    }
 
+    #testimonials .container #testimonial-p1 {
+        font-size: 1.2rem;
+        margin-left: 5rem;
+    }
+    
+    #testimonials .container #quote {
+        margin-left: 5rem;
+    }
+
+    #testimonials .container .testimonial-desktop {
+        display: grid;
+        grid-template-columns: 630px auto;
+    }
+
+    #testimonials .container .test-user-info {
+        grid-template-columns: 530px 27px 27px;
+        grid-template-rows: 27px;
+        margin-top: -6rem;
+        margin-bottom: 4rem;
+    }
+
+    #testimonials .container h5 {
+        margin-left: 5rem;
+    }
+    
+    #testimonials .container #testimonial-p2 {
+        margin-top: 1px;
+        margin-left: 5rem;
+    }
+
+    #testimonials .container .icon-border {
+        font-size: 1.6rem;
+        width: 1.5rem;
+    }
+
+    #news h1 {
+        font-size: 4em;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+    }
+
+    #news .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #news .container p {
+        margin-bottom: 5rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
+    #news .container img {
+        width: 40%;
     }
 }
 
@@ -378,7 +540,7 @@ html, body {
     }
 
     #benefits .container .benefit-pic {
-        grid-template-columns: 465px 200px 500px;
+        grid-template-columns: 480px 200px 500px;
     }
 
     #benefits .container h2 {
@@ -390,7 +552,39 @@ html, body {
     }
 
     #laptop-pic {
-        margin-left: 30rem;
-        height: 820px;
+        margin-left: 35rem;
+        height: 750px;
+    }
+
+    #features .container {
+        grid-template-columns: 310px 310px;
+    }
+
+    #testimonials .container img {
+        width: 50%;
+        height: 350px;
+        margin-left: -15rem;
+        padding-top: 3.2rem;
+    }
+
+    #testimonials .container h5 {
+        margin-left: 10rem;
+    }
+    
+    #testimonials .container #testimonial-p2 {
+        margin-left: 10rem;
+    }
+
+    #testimonials .container #testimonial-p1 {
+        margin-left: 10rem;
+    }
+    
+    #testimonials .container #quote {
+        margin-left: 10rem;
+    }
+
+    #testimonials .container .test-user-info {
+        grid-template-columns: 560px 27px 27px;
+        grid-template-rows: 27px;
     }
 }

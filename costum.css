@@ -392,6 +392,49 @@ html, body {
     margin-bottom: 1rem;
 }
 
+#wireland {
+    background: var(--myblue);
+    border-bottom: 1px solid var(--mygrey);
+    color: white;
+}
+
+#wireland input {
+    width: 80%;
+}
+
+#wireland button {
+    border-radius: 2px;
+}
+
+#icon1 {
+    border: 1px solid white;
+    color: var(--myblue);
+    background: white;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    width: 28px;
+    height: 28px;
+}
+
+#icon2 {
+    border: 1px solid white;
+    color: var(--myblue);
+    background: white;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    width: 28px;
+    height: 28px;
+}
+
+#icon3 {
+    border: 1px solid white;
+    color: var(--myblue);
+    background: white;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    width: 28px;
+    height: 28px;
+}
 @media(min-width: 576px) {
     #header {
         height: 480px;
@@ -530,6 +573,7 @@ html, body {
     #bg-map .container {
         background: white;
         border: 1px solid var(--mygrey);
+        border-radius: 2px;
         width: 50%;
         margin-left: 21rem;
     }

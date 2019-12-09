@@ -249,6 +249,149 @@ html, body {
     width: 40%;
 }
 
+#choose-your-plan {
+    border-bottom: 1px solid var(--mygrey);
+}
+
+#choose-your-plan h1 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#choose-your-plan h5 {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+#choose-your-plan .container button {
+    margin-left: 3.8rem;
+}
+
+#choose-your-plan .mycards i {
+    padding-top: 1rem;
+    margin-right: 0.1rem;
+    font-size: 0.7rem;
+}
+
+#choose-your-plan .container ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 20px auto;
+    padding-left: 4.4rem;
+    margin-bottom: 2.8rem;
+}
+
+#choose-your-plan ul i {
+    margin-top: 0.3rem;
+}
+
+#choose-your-plan #card1 {
+    border: 1px solid var(--myblue);
+    width: 70%;
+    height: 340px;
+    margin-bottom: 2rem;
+    margin-left: 3.2rem;
+}
+
+#choose-your-plan #header1 {
+    display: flex;
+    padding-left: 5rem;
+    padding-top: 2rem;
+    margin-bottom: 2.7rem;
+}
+
+#choose-your-plan #card2 {
+    border: 1px solid var(--myblue);
+    color: var(--myblue);
+    width: 70%;
+    height: 370px;
+    margin-bottom: 2rem;
+    margin-left: 3.2rem;
+}
+
+#choose-your-plan #card2 #card2-p1 {
+    padding-top: 1.3rem;
+    padding-left: 3.6rem;
+    font-weight: 500;
+}
+
+#choose-your-plan #card2 #card2-p2 {
+    padding-left: 5.7rem;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
+
+#choose-your-plan #header2 {
+    display: flex;
+    padding-left: 5rem;
+}
+
+#choose-your-plan #card3 {
+    border: 1px solid var(--myblue);
+    width: 70%;
+    height: 340px;
+    margin-bottom: 2rem;
+    margin-left: 3.2rem;
+}
+
+#choose-your-plan #card3 p {
+    padding-left: 5.5rem;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
+
+#choose-your-plan #header3 {
+    display: flex;
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+
+#bg-map {
+    border-bottom: 1px solid var(--mygrey);
+}
+
+#bg-map h1 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 3rem;
+}
+
+#bg-map #bg-map-text {
+    text-align: left;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+#bg-map a {
+    text-decoration: none;
+}
+
+#bg-map .bg-map-info {
+    display: grid;
+    grid-template-columns: 20px auto;
+}
+
+#bg-map .bg-map-info i {
+    margin-left: 3rem;
+    margin-top: 0.3rem;
+}
+
+#bg-map .bg-map-info p {
+    margin-left: 4.5rem;
+}
+
+#bg-map .bg-map-info:last-child {
+    margin-bottom: 2rem;
+}
+
+#bg-map .bg-map-info a {
+    margin-left: 4.5rem;
+    margin-bottom: 1rem;
+}
+
 @media(min-width: 576px) {
     #header {
         height: 480px;
@@ -355,6 +498,40 @@ html, body {
 
     #news .container img {
         width: 30%;
+    }
+
+    #choose-your-plan #card1 {
+        width: 35%;
+        margin-left: 13.7rem;
+    }
+
+    #choose-your-plan #card2 {
+        width: 35%;
+        margin-left: 13.7rem;
+    }
+
+    #choose-your-plan #card3 {
+        width: 35%;
+        margin-left: 13.7rem;
+    }
+
+    #choose-your-plan h1 {
+        margin-bottom: 5rem;
+    }
+
+    #bg-map {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        background-image: url(images/bg-map-big.png);
+        background-size: 820px 450px;
+        background-repeat: no-repeat;
+    }
+
+    #bg-map .container {
+        background: white;
+        border: 1px solid var(--mygrey);
+        width: 50%;
+        margin-left: 21rem;
     }
 }
 
@@ -532,6 +709,115 @@ html, body {
     #news .container img {
         width: 40%;
     }
+
+    #choose-your-plan h1 {
+        font-size: 4em;
+        margin-bottom: 9rem;
+        margin-top: 5rem;
+    }
+
+    #choose-your-plan h5 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    #choose-your-plan .mycards i {
+        padding-top: 2.2rem;
+        margin-right: 0.3rem;
+        font-size: 0.9rem;
+    }
+    
+    #choose-your-plan #header1 {
+        padding-left: 5.7rem;
+    }
+
+    #choose-your-plan .container ul {
+        grid-template-columns: 20px auto;
+        padding-left: 4.4rem;
+        margin-bottom: 2.8rem;
+    }
+    
+    #choose-your-plan ul i {
+        margin-top: 1rem;
+        margin-left: 0.8rem;
+        font-size: 1.7em;
+    }
+
+    #choose-your-plan ul li {
+        margin-left: 2.4rem;
+        margin-top: 1rem;
+    }
+
+    #choose-your-plan .container {
+        display: grid;
+        grid-template-columns: 310px 310px 310px;
+    }
+
+    #choose-your-plan #card1 {
+        width: 100%;
+        height: 500px;
+        margin-left: 0rem;
+    }
+
+    #choose-your-plan #card2 {
+        background: var(--myblue);
+        color: var(--mygrey);
+        width: 100%;
+        height: 532px;
+        margin-left: 0rem;
+        margin-bottom: 5rem;
+        margin-top: -1rem;
+    }
+
+    #choose-your-plan #card2 button {
+        background: var(--mygrey);
+        color: var(--myblue);
+    }
+
+    #choose-your-plan #card2 #header2 {
+        margin-top: -1rem;
+    }
+
+    #choose-your-plan #card2 #card2-p1 {
+        padding-left: 4.5rem;
+        font-size: 1.2rem;
+    }
+    
+    #choose-your-plan #card2 #card2-p2 {
+        padding-left: 8rem;
+    }
+
+    #choose-your-plan #card3 {
+        width: 100%;
+        height: 500px;
+        margin-left: 0rem;
+    }
+
+    #choose-your-plan #card3 p {
+        padding-left: 7.3rem;
+    }
+
+    #choose-your-plan .container button {
+        margin-left: 2rem;
+        width: 80%;
+    }
+
+    #bg-map h1 {
+        font-size: 4em;
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+    }
+
+    #bg-map {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        background-size: 1200px 580px;
+    }
+
+    #bg-map .container {
+        width: 50%;
+        margin-left: 28rem;
+    }
 }
 
 @media(min-width: 1200px) {
@@ -586,5 +872,28 @@ html, body {
     #testimonials .container .test-user-info {
         grid-template-columns: 560px 27px 27px;
         grid-template-rows: 27px;
+    }
+
+    #choose-your-plan #card1 {
+        margin-left: 5.6rem;
+    }
+
+    #choose-your-plan #card2 {
+        margin-left: 5.5rem;
+    }
+
+    #choose-your-plan #card3 {
+        margin-left: 5.4rem;
+    }
+
+    #bg-map {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        background-size: 1300px 580px;
+    }
+
+    #bg-map .container {
+        width: 40%;
+        margin-left: 38rem;
     }
 }

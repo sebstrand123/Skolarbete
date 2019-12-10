@@ -414,8 +414,10 @@ html, body {
     font-size: 1.2rem;
     width: 28px;
     height: 28px;
-    padding-top: 0.2rem;
+    padding-top: 0.25rem;
+    padding-right: 0.1rem;
     margin-bottom: 2rem;
+    margin-right: 0.7rem;
 }
 
 #icon2 {
@@ -426,7 +428,8 @@ html, body {
     font-size: 1.2rem;
     width: 28px;
     height: 28px;
-    padding-top: 0.2rem;
+    padding-top: 0.25rem;
+    margin-right: 0.7rem;
 }
 
 #icon3 {
@@ -437,7 +440,7 @@ html, body {
     font-size: 1.2rem;
     width: 28px;
     height: 28px;
-    padding-top: 0.2rem;
+    padding-top: 0.25rem;
 }
 @media(min-width: 576px) {
     #header {

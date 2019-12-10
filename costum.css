@@ -1,5 +1,6 @@
 :root {
     --myblue: rgb(61, 136, 181);
+    --darkerblue: rgb(18, 81, 121);
     --mygrey: rgb(232, 239, 247);
 }
 
@@ -390,20 +391,96 @@ html, body {
 #bg-map .bg-map-info a {
     margin-left: 4.5rem;
     margin-bottom: 1rem;
+    color: var(--myblue);
 }
 
 #wireland {
     background: var(--myblue);
-    border-bottom: 1px solid var(--mygrey);
+    /* border-bottom: 1px solid var(--mygrey); */
     color: white;
+    position: relative;
+}
+
+.d-flex {
+    display: flex;
+}
+
+#wireland span {
+    font-size: 1.5rem;
+    margin-left: 7rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.3rem;
+}
+
+#wireland span:last-child {
+    font-size: 1.5rem;
+    margin-left: 0.2rem;
+}
+
+#wireland .brand-border {
+    font-weight: 300;
+    border: 0.03em dotted white;
+    padding: 0 0.8rem;
+    position: relative;
+}
+
+#wireland .brand-bold {
+    font-weight: 700;
+    margin-left: 0.5rem;
+}
+
+#wireland .corner-box {
+    width: 0.20em;
+    height: 0.20em;
+    background-color: #fff;
+    position: absolute;
+}
+
+#wireland .tl {
+    top: 7.3%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+}
+
+#wireland .tr {
+    top: 7.3%;
+    right: 46.9%;
+    transform: translate(50%, -50%);
+}
+
+#wireland .bl {
+    bottom: 83.5%;
+    left: 34%;
+    transform: translate(-50%, 50%);
+}
+
+#wireland .br {
+    bottom: 83.5%;
+    right: 46.9%;
+    transform: translate(50%, 50%);
+}
+
+#wireland p {
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 #wireland input {
     width: 80%;
+    height: 49px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 #wireland button {
+    border: 2px solid white;
     border-radius: 2px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 55%;
+    top: 67%;
 }
 
 #icon1 {
@@ -441,6 +518,16 @@ html, body {
     width: 28px;
     height: 28px;
     padding-top: 0.25rem;
+}
+
+#footer {
+    background-color: var(--darkerblue);
+    padding-bottom: 0.3rem;
+}
+
+#footer p {
+    color: white;
+    padding-top: 1rem;
 }
 @media(min-width: 576px) {
     #header {
@@ -583,6 +670,44 @@ html, body {
         border-radius: 2px;
         width: 50%;
         margin-left: 21rem;
+    }
+
+    #wireland p {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+    
+    #wireland input {
+        width: 50%;
+    }
+    
+    #wireland button {
+        left: 57%;
+        top: 62.5%;
+    }
+
+    #wireland span {
+        margin-left: 17rem;
+    }
+
+    #wireland .tl {
+        top: 8.8%;
+        left: 40.55%;
+    }
+    
+    #wireland .tr {
+        top: 8.8%;
+        right: 50%;
+    }
+    
+    #wireland .bl {
+        bottom: 80.35%;
+        left: 40.55%;
+    }
+    
+    #wireland .br {
+        bottom: 80.35%;
+        right: 50%;
     }
 }
 
@@ -869,6 +994,44 @@ html, body {
         width: 50%;
         margin-left: 28rem;
     }
+
+    #wireland p {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+    
+    #wireland input {
+        margin-bottom: 3rem;
+    }
+    
+    #wireland button {
+        left: 61%;
+        top: 57.5%;
+    }
+
+    #wireland span {
+        margin-left: 25rem;
+    }
+
+    #wireland .tl {
+        top: 8.9%;
+        left: 43.7%;
+    }
+    
+    #wireland .tr {
+        top: 8.9%;
+        right: 49.3%;
+    }
+    
+    #wireland .bl {
+        bottom: 79.9%;
+        left: 43.7%;
+    }
+    
+    #wireland .br {
+        bottom: 79.9%;
+        right: 49.3%;
+    }
 }
 
 @media(min-width: 1200px) {
@@ -946,5 +1109,39 @@ html, body {
     #bg-map .container {
         width: 40%;
         margin-left: 38rem;
+    }
+
+    #wireland p {
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+    
+    #wireland input {
+        width: 45%;
+    }
+    
+    #wireland button {
+        left: 60%;
+        top: 57.5%;
+    }
+
+    #wireland span {
+        margin-left: 31rem;
+    }
+
+    #wireland .tl {
+        left: 45.35%;
+    }
+    
+    #wireland .tr {
+        right: 48.9%;
+    }
+    
+    #wireland .bl {
+        left: 45.35%;
+    }
+    
+    #wireland .br {
+        right: 48.9%;
     }
 }

@@ -1,0 +1,1169 @@
+@import "./variables";
+@import "./mixins";
+@import "./colors";
+@import "./functions";
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.bg-mygrey {
+    background-color: color(mygrey);
+}
+
+.btn-myblue {
+    color: #fff;
+    background-color: color(myblue);
+    border-color: color(myblue);
+}
+
+.btn-myblue:hover {
+    color: #fff;
+    background-color: color(myblue);
+    border-color: color(myblue);
+}
+
+.btn {
+    padding: 0.375rem 1.5rem;
+    border-radius: 0;
+    font-weight: 500;
+}
+
+.navbar-brand img {
+    margin-left: -35px;
+}
+
+.navbar-text {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-right: 6.3rem;
+    font-size: 0.85em;
+    display: none;
+
+     @include desktop {
+        display: flex;
+    }
+}
+
+.navbar-text i {
+    margin-right: 0.8rem;
+    font-size: 1.3em;
+    margin-top: 0.05rem;
+}
+
+.text-myblue {
+    color: color(myblue);
+}
+
+#header {
+    height: 400px;
+    overflow: hidden;
+    border-bottom: 1px solid color(mygrey);
+
+
+
+    @include tablet {
+        height: 600px;
+    }
+
+    @include desktop {
+        height: 750px;
+    }
+
+    @include wide-desktop {
+        height: 850px;
+    }
+
+    .navbar-text {
+        color: color(myblue);
+
+        a {
+            color: color(myblue);
+        }
+    }
+
+    .jumbotron {
+        background: transparent;
+
+        h1 {
+            font-size: 2.4em;
+
+            @include desktop {
+                font-size: 4em;
+            }
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 0.7em;
+
+            @include desktop {
+                font-size: 1.3em;
+            }
+        }
+
+        img {
+            width: 90%;
+            margin-top: 0.8rem;
+
+            @include tablet {
+                margin-top: 3rem;
+            }
+        }
+    }
+}
+
+#announcement {
+    background-color: white;
+    border-bottom: 1px solid color(mygrey);
+
+    .jumbotron {
+        background: transparent;
+        margin-bottom: 0;
+
+        .container {
+
+            @include desktop {
+                display: flex;
+            }
+
+            i {
+                font-size: 2.5rem;
+                margin: 1rem 0;
+
+                @include desktop {
+                    display: none;
+                }
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 0;
+                font-weight: 700;
+                padding: 0 1rem;
+
+                @include desktop {
+                    flex: 3;
+                    text-align: right;
+                    font-size: 2rem;
+                }
+            }
+            
+            p {
+                padding: 0 1rem;
+
+                @include desktop {
+                    flex: 7;
+                    text-align: left;
+                    margin-top: 0.3rem;
+                }
+            }
+        }   
+    }
+}
+
+#how-it-works {
+    border-bottom: 1px solid color(mygrey);
+
+    .container {
+        h1 {
+        font-size: 1.5rem;
+        margin-top: 1.7rem;
+        margin-bottom: 1rem;
+
+            @include desktop {
+                font-size: 4em;
+                margin-top: 2.5rem;
+                margin-bottom: 3rem;
+            }
+        }
+
+        i {
+            font-size: 0.8rem;
+            margin-top: 1.2rem;
+
+            @include desktop {
+                font-size: 1.2rem;
+                margin-top: 1.2rem;
+            }
+        }
+
+        #play-this-video {
+            width: 75%;
+            margin-top: 0.8rem;
+        }
+
+        .step-picture {
+            display: flex;
+            margin-top: 2rem;
+
+            @include desktop {
+                margin-top: 5rem;
+            }
+
+            h5{
+                margin-top: 1rem;
+
+                @include desktop {
+                    font-size: 1em;
+                }
+            }
+
+            p {
+                margin-bottom: 2rem;
+
+                @include desktop {
+                    margin-bottom: 5rem;
+                }
+            }
+        }
+    }
+}
+
+#benefits {
+    border-bottom: 1px solid color(mygrey);
+
+    .container {
+        .benefit-pic {
+            @include desktop {
+                display: grid;
+                grid-template-columns: 375px 200px 500px;
+            }
+
+            @include wide-desktop {
+                grid-template-columns: 480px 200px 500px;
+            }
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-top: 3rem;
+            margin-bottom: 2.7rem;
+
+            @include desktop {
+                font-size: 4em;
+                margin-bottom: 7rem;
+                margin-top: 5rem;
+            }
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 1.2rem;
+
+            @include tablet {
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+            }
+
+            @include desktop {
+                font-size: 1.9rem;
+                text-align: right;
+                margin-right: 1.5rem;
+                margin-left: 3rem;
+                margin-top: 3.5rem;
+            }
+
+            @include wide-desktop {
+                margin-left: 7rem;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            margin-top: 1.2rem;
+            margin-bottom: 3rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
+
+            @include tablet {
+                font-size: 1rem;
+                margin-top: 1rem;
+                margin-bottom: 3rem;
+                margin-left: 10rem;
+                margin-right: 10rem;
+            }
+
+            @include desktop {
+                text-align: left;
+                margin-left: 1.5rem;
+                margin-top: 3.5rem;
+            }
+        }
+
+        img {
+            width: 23%;
+
+            @include tablet {
+                width: 13%;
+            }
+
+            @include desktop {
+                width: 95%;
+                margin-bottom: 5rem;
+            }
+        }
+    }
+}
+
+#features {
+    border-bottom: 1px solid color(mygrey);
+
+    @include tablet {
+        width: 768px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    @include desktop {
+        width: 1024px;
+    }
+
+    @include wide-desktop {
+        width: 1265px;
+    }
+
+    .container {
+        @include tablet {
+            display: grid;
+            grid-template-columns: 250px 250px;
+        }
+
+        @include wide-desktop {
+            grid-template-columns: 310px 310px;
+        }
+
+        .feature-list {
+            @include tablet {
+                display: flex;
+                text-align: left;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        .feature-image {
+            @include tablet {
+                height: 50%;
+                margin-left: 2rem;
+                margin-top: 1.5rem;
+            }
+        }
+
+        h5 {
+            @include tablet {
+                margin-left: 1rem;
+                margin-top: 1.8rem;
+            }
+        }
+
+        p {
+            @include tablet {
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    .container:last-child {
+        @include tablet {
+            margin-bottom: 10rem;
+        }
+    }
+
+    #laptop-pic {
+        display: none;
+
+        @include tablet {
+            display: flex;
+            margin-left: 27rem;
+            padding-bottom: 2rem;
+            height: 900px;
+            position: absolute;
+        }
+
+        @include desktop {
+            margin-left: 30rem;
+            padding-bottom: 2rem;
+        }
+
+        @include wide-desktop {
+            margin-left: 35rem;
+            height: 750px;
+        }
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+
+        @include desktop {
+            font-size: 4em;
+            margin-bottom: 7rem;
+            margin-top: 5rem;
+        }
+    }
+}
+
+#testimonials {
+    border-bottom: 1px solid color(mygrey);
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+
+        @include desktop {
+            font-size: 4em;
+            margin-top: 4rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+    .container {
+        #quote {
+            font-size: 3.5rem;
+            display: flex;
+            opacity: 0.2;
+            margin-left: 1.5rem;
+
+            @include desktop {
+                margin-left: 5rem;
+            }
+
+            @include wide-desktop {
+                margin-left: 10rem;
+            }
+        }
+
+        #testimonial-p1 {
+            text-align: left;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            margin-bottom: 3rem;
+
+            @include desktop {
+                font-size: 1.2rem;
+                margin-left: 5rem;
+            }
+
+            @include wide-desktop {
+                margin-left: 10rem;
+            }
+        }
+
+        #testimonial-p2 {
+            text-align: left;
+            margin-left: 1.5rem;
+            margin-top: -1.3rem;
+            opacity: 0.5;
+
+            @include tablet {
+                margin-left: 7.3rem;
+            }
+
+            @include desktop {
+                margin-top: 1px;
+                margin-left: 5rem;
+            }
+
+            @include wide-desktop {
+                margin-left: 10rem;
+            }
+        }
+
+        img {
+            margin-top: 0.5rem;
+            margin-bottom: 0.7rem;
+            width: 85%;
+
+            @include tablet {
+                width: 70%;
+                margin-left: 1.5rem;
+            }
+
+            @include desktop {
+                width: 85%;
+                height: 370px;
+                margin-left: -6rem;
+                padding-top: 3.2rem;
+            }
+
+            @include wide-desktop {
+                width: 50%;
+                height: 350px;
+                margin-left: -15rem;
+                padding-top: 3.2rem;
+            }
+        }
+
+        .icon-border {
+            border: 1px solid;
+            font-size: 2.5rem;
+            width: 2.5rem;
+
+            @include desktop {
+                font-size: 1.6rem;
+                width: 1.5rem;
+            }
+        }
+
+        h5 {
+            padding: 0;
+            margin-left: 1.5rem;
+            margin-bottom: 0;
+            text-align: left;
+
+            @include tablet {
+                margin-left: 7.3rem;
+            }
+
+            @include desktop {
+                margin-left: 5rem;
+            }
+
+            @include wide-desktop {
+                margin-left: 10rem;
+            }
+        }
+
+        .test-user-info {
+            display: grid;
+            grid-template-columns: 228px 50px 50px;
+
+            @include tablet {
+                grid-template-columns: 503px 55px 55px;
+            }
+
+            @include desktop {
+                grid-template-columns: 530px 27px 27px;
+                grid-template-rows: 27px;
+                margin-top: -6rem;
+                margin-bottom: 4rem;
+            }
+        }
+
+        .testimonial-desktop {
+            @include desktop {
+                display: grid;
+                grid-template-columns: 630px auto;
+            }
+        }
+    }
+}
+
+#news {
+    border-bottom: 1px solid color(mygrey);
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        @include desktop {
+            font-size: 4em;
+            margin-top: 4rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+    .container {
+        @include desktop {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        p {
+            margin-top: 0.6rem;
+            margin-bottom: 1.5rem;
+
+            @include tablet {
+                margin-bottom: 3rem;
+                margin-right: 7rem;
+                margin-left: 7rem;
+            }
+
+            @include desktop {
+                margin-bottom: 5rem;
+                margin-right: 1rem;
+                margin-left: 1rem;
+                margin-top: 2rem;
+            }
+        }
+
+        img {
+            width: 40%;
+
+            @include tablet {
+                width: 30%;
+            }
+
+            @include desktop {
+                width: 40%;
+            }
+        }
+    }
+}
+
+#choose-your-plan {
+    border-bottom: 1px solid color(mygrey);
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        @include tablet {
+            margin-bottom: 5rem;
+        }
+
+        @include desktop {
+            font-size: 4em;
+            margin-bottom: 9rem;
+            margin-top: 5rem;
+        }
+    }
+
+    h5 {
+        font-size: 1.7rem;
+        font-weight: 700;
+
+        @include desktop {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+    }
+
+    #header1 {
+        display: flex;
+        padding-left: 5rem;
+        padding-top: 2rem;
+        margin-bottom: 2.7rem;
+
+        @include desktop {
+            padding-left: 5.7rem;
+        }
+    }
+
+    #header2 {
+        display: flex;
+        padding-left: 5rem;
+
+        @include desktop {
+            margin-top: -1rem;
+        }
+    }
+
+    #header3 {
+        display: flex;
+        padding-left: 5rem;
+        padding-top: 2rem;
+    }
+
+    #card1 {
+        border: 1px solid color(myblue);
+        width: 70%;
+        height: 340px;
+        margin-bottom: 2rem;
+        margin-left: 3.2rem;
+
+        @include tablet {
+            width: 35%;
+            margin-left: 13.7rem;
+        }
+
+        @include desktop {
+            width: 100%;
+            height: 500px;
+            margin-left: 0rem;
+        }
+
+        @include wide-desktop {
+            margin-left: 5.6rem;
+        }
+    }
+
+    #card2 {
+        border: 1px solid color(myblue);
+        color: color(myblue);
+        width: 70%;
+        height: 370px;
+        margin-bottom: 2rem;
+        margin-left: 3.2rem;
+
+        @include tablet {
+            width: 35%;
+            margin-left: 13.7rem;
+        }
+
+        @include desktop {
+            background: color(myblue);
+            color: color(mygrey);
+            width: 100%;
+            height: 532px;
+            margin-left: 0rem;
+            margin-bottom: 5rem;
+            margin-top: -1rem;
+        }
+
+        @include wide-desktop {
+            margin-left: 5.5rem;
+        }
+
+        #card2-p1 {
+            padding-top: 1.3rem;
+            padding-left: 3.6rem;
+            font-weight: 500;
+
+            @include desktop {
+                padding-left: 4.5rem;
+                font-size: 1.2rem;
+            }
+        }
+
+        #card2-p2 {
+            padding-left: 5.7rem;
+            margin-top: -1rem;
+            margin-bottom: 2rem;
+
+            @include desktop {
+                padding-left: 8rem;
+            }
+        }
+
+        button {
+            @include desktop {
+            background: color(mygrey);
+            color: color(myblue);
+            }
+        }
+    }
+
+    #card3 {
+        border: 1px solid color(myblue);
+        width: 70%;
+        height: 340px;
+        margin-bottom: 2rem;
+        margin-left: 3.2rem;
+
+        @include tablet {
+            width: 35%;
+            margin-left: 13.7rem;
+        }
+
+        @include desktop {
+            width: 100%;
+            height: 500px;
+            margin-left: 0rem;
+        }
+
+        @include wide-desktop {
+            margin-left: 5.4rem;
+        }
+
+        p {
+            padding-left: 5.5rem;
+            margin-top: -1rem;
+            margin-bottom: 2rem;
+
+            @include desktop {
+                padding-left: 7.3rem;
+            }
+        }
+    }
+
+    .container {
+        @include desktop {
+            display: grid;
+            grid-template-columns: 310px 310px 310px;
+        }
+
+        .mycards {
+            i {
+                padding-top: 1rem;
+                margin-right: 0.1rem;
+                font-size: 0.7rem;
+
+                @include desktop {
+                    padding-top: 2.2rem;
+                    margin-right: 0.3rem;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    
+        button {
+            margin-left: 3.8rem;
+
+            @include desktop {
+                margin-left: 2rem;
+                width: 80%;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: 20px auto;
+            padding-left: 4.4rem;
+            margin-bottom: 2.8rem;
+
+            @include desktop {
+                grid-template-columns: 20px auto;
+                padding-left: 4.4rem;
+                margin-bottom: 2.8rem;
+            }
+
+            li {
+                @include desktop {
+                    margin-left: 2.4rem;
+                    margin-top: 1rem;
+                }
+            }
+
+            i {
+                margin-top: 0.3rem;
+
+                @include desktop {
+                    margin-top: 1rem;
+                    margin-left: 0.8rem;
+                    font-size: 1.7em;
+                }
+            }
+        }
+    }
+}
+
+#bg-map {
+    border-bottom: 1px solid color(mygrey);
+
+    @include tablet {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        background-image: url(images/bg-map-big.png);
+        background-size: 820px 450px;
+        background-repeat: no-repeat;
+    }
+
+    @include desktop {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        background-size: 1200px 580px;
+    }
+
+    @include wide-desktop {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        background-size: 1300px 580px;
+    }
+
+    .container {
+        @include tablet {
+        background: white;
+        border: 1px solid color(mygrey);
+        border-radius: 2px;
+        width: 50%;
+        margin-left: 21rem;
+        }
+
+        @include desktop {
+            width: 50%;
+            margin-left: 28rem;
+        }
+
+        @include wide-desktop {
+            width: 40%;
+            margin-left: 38rem;
+        }
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        margin-left: 3rem;
+
+        @include desktop {
+            font-size: 4em;
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+        }
+    }
+
+    #bg-map-text {
+        text-align: left;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .bg-map-info {
+        display: grid;
+        grid-template-columns: 20px auto;
+
+        i {
+            margin-left: 3rem;
+            margin-top: 0.3rem;
+        }
+
+        p {
+            margin-left: 4.5rem;
+        }
+
+        a {
+            margin-left: 4.5rem;
+            margin-bottom: 1rem;
+            color: color(myblue);
+        }
+    }
+
+    .bg-map-info:last-child {
+        margin-bottom: 2rem;
+    }
+}
+
+#wireland {
+    background: color(myblue);
+    color: white;
+    position: relative;
+
+    .d-flex {
+        display: flex;
+    }
+
+    p {
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+        @include tablet {
+            margin-left: 6rem;
+            margin-right: 6rem;
+        }
+
+        @include desktop {
+            margin-left: 8rem;
+            margin-right: 8rem;
+        }
+
+        @include wide-desktop {
+            margin-left: 15rem;
+            margin-right: 15rem;
+        }
+    }
+
+    input {
+        width: 80%;
+        height: 49px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+
+        @include tablet {
+            width: 50%;
+        }
+
+        @include desktop {
+            margin-bottom: 3rem;
+        }
+
+        @include wide-desktop {
+            width: 45%;
+        }
+    }
+
+    button {
+        border: 2px solid white;
+        border-radius: 2px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 55%;
+        top: 67%;
+
+        @include tablet {
+            left: 57%;
+            top: 62.5%;
+        }
+
+        @include desktop {
+            left: 61%;
+            top: 57.5%;
+        }
+
+        @include wide-desktop {
+            left: 60%;
+            top: 57.5%;
+        }
+    }
+
+    span {
+        font-size: 1.5rem;
+        margin-left: 7rem;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.3rem;
+
+        @include tablet {
+            margin-left: 17rem;
+        }
+
+        @include desktop {
+            margin-left: 25rem;
+        }
+
+        @include wide-desktop {
+            margin-left: 31rem;
+        }
+    }
+
+    span:last-child {
+        font-size: 1.5rem;
+        margin-left: 0.2rem;
+    }
+
+    .brand-border {
+        font-weight: 300;
+        border: 0.03em dotted white;
+        padding: 0 0.8rem;
+        position: relative;
+    }
+
+    .brand-bold {
+        font-weight: 700;
+        margin-left: 0.5rem;
+    }
+
+    .corner-box {
+        width: 0.20em;
+        height: 0.20em;
+        background-color: #fff;
+        position: absolute;
+    }
+
+    .tl {
+        top: 7.3%;
+        left: 34%;
+        transform: translate(-50%, -50%);
+
+        @include tablet {
+            top: 8.8%;
+            left: 40.55%;
+        }
+
+        @include desktop {
+            top: 8.9%;
+            left: 43.7%;
+        }
+
+        @include wide-desktop {
+            left: 45.35%;
+        }
+    }
+
+    .tr {
+        top: 7.3%;
+        right: 46.9%;
+        transform: translate(50%, -50%);
+
+        @include tablet {
+            top: 8.8%;
+            right: 50%;
+        }
+
+        @include desktop {
+            top: 8.9%;
+            right: 49.3%;
+        }
+
+        @include wide-desktop {
+            right: 48.9%;
+        }
+    }
+
+    .bl {
+        bottom: 83.5%;
+        left: 34%;
+        transform: translate(-50%, 50%);
+
+        @include tablet {
+            bottom: 80.35%;
+            left: 40.55%;
+        }
+
+        @include desktop {
+            bottom: 79.9%;
+            left: 43.7%;
+        }
+
+        @include wide-desktop {
+            left: 45.35%;
+        }
+    }
+
+    .br {
+        bottom: 83.5%;
+        right: 46.9%;
+        transform: translate(50%, 50%);
+
+        @include tablet {
+            bottom: 80.35%;
+            right: 50%;
+        }
+
+        @include desktop {
+            bottom: 79.9%;
+            right: 49.3%;
+        }
+
+        @include wide-desktop {
+            right: 48.9%;
+        }
+    }
+
+    #icon1 {
+        border: 1px solid white;
+        color: color(myblue);
+        background: white;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        width: 28px;
+        height: 28px;
+        padding-top: 0.25rem;
+        padding-right: 0.1rem;
+        margin-bottom: 2rem;
+        margin-right: 0.7rem;
+    }
+
+    #icon2 {
+        border: 1px solid white;
+        color: color(myblue);
+        background: white;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        width: 28px;
+        height: 28px;
+        padding-top: 0.25rem;
+        margin-right: 0.7rem;
+    }
+    
+    #icon3 {
+        border: 1px solid white;
+        color: color(myblue);
+        background: white;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        width: 28px;
+        height: 28px;
+        padding-top: 0.25rem;
+    }
+}
+
+#footer {
+    background-color: color(darkerblue);
+    padding-bottom: 0.3rem;
+
+    p {
+        color: white;
+        padding-top: 1rem;
+    }
+}

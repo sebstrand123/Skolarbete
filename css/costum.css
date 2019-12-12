@@ -49,6 +49,10 @@ html, body {
     margin-top: 0.05rem;
 }
 
+#header .navbar-text a {
+    color: var(--myblue);
+}
+
 .text-myblue {
     color: var(--myblue) !important;
 }
@@ -396,7 +400,6 @@ html, body {
 
 #wireland {
     background: var(--myblue);
-    /* border-bottom: 1px solid var(--mygrey); */
     color: white;
     position: relative;
 }

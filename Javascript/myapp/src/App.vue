@@ -7,9 +7,13 @@
       <div class="container-fluid page-body-wrapper">
         <div class="main-panel">
           <div class="content-wrapper">
+            <div class="row">
+              <div class="col-md-12 grid-margin">
 
-            <Welcometext />
+            <Welcometext :name="name" />
 
+              </div>
+            </div>
             <div class="row">
               <div class="col-xl-6 grid-margin">
                 <div class="row">
@@ -146,24 +150,24 @@
 
 
 <script>
-import Nav from './components/navbar/nav'
-import Welcometext from './components/welcometext'
-import Users from './components/users'
-import Projects from './components/projects'
-import Downloads from './components/downloads'
-import Totalsales from './components/totalsales'
-import Salesthismonth from './components/salesthismonth'
-import Totalpurchases from './components/totalpurchases'
-import Totalorders from './components/totalorders'
-import Totalgrowth from './components/totalgrowth'
-import Tickets from './components/tickets'
-import Updates from './components/updates'
-import Distribution from './components/distributiontext/distribution'
-import Body from './components/distributiontext/body'
-import Salesreport from './components/salesreport'
-import Salesreportoverview from './components/salesreportoverview'
-import Openinvoices from './components/openinvoices'
-import Footer from './components/footer'
+import Nav from "./components/navbar/nav";
+import Welcometext from "./components/welcometext";
+import Users from "./components/users";
+import Projects from "./components/projects";
+import Downloads from "./components/downloads";
+import Totalsales from "./components/totalsales";
+import Salesthismonth from "./components/salesthismonth";
+import Totalpurchases from "./components/totalpurchases";
+import Totalorders from "./components/totalorders";
+import Totalgrowth from "./components/totalgrowth";
+import Tickets from "./components/tickets";
+import Updates from "./components/updates";
+import Distribution from "./components/distributiontext/distribution";
+import Body from "./components/distributiontext/body";
+import Salesreport from "./components/salesreport";
+import Salesreportoverview from "./components/salesreportoverview";
+import Openinvoices from "./components/openinvoices";
+import Footer from "./components/footer";
 
 export default {
   name: "app",
@@ -187,14 +191,19 @@ export default {
     Openinvoices,
     Footer
   },
-
-    created() {
-
-    fetch("https://inlupp-fa.azurewebsites.net/api/users?firstname=Sebastian&lastname=Strandberg")
-    .then(res => res.text())
-    .then(data => {
-      this.name = data;
-    })
+  data() {
+    return {
+      name: String
+    };
+  },
+  created() {
+    fetch(
+      "https://inlupp-fa.azurewebsites.net/api/users?firstname=Sebastian&lastname=Strandberg"
+    )
+      .then(res => res.text())
+      .then(data => {
+        this.name = data;
+      });
   }
 };
 </script>

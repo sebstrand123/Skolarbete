@@ -3,7 +3,6 @@
   $(function() {
 
 
-// Fråga Hans
     fetch('https://inlupp-fa.azurewebsites.net/api/total-sales-chart')
     .then(res => res.json())
     .then(data => {
@@ -995,7 +994,6 @@
       document.getElementById('distribution-legend').innerHTML = distributionChart.generateLegend();
     }
 
-    // Fråga Hans
     fetch('https://inlupp-fa.azurewebsites.net/api/sales-report')
     .then(res => res.json())
     .then(data => {
